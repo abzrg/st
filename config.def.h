@@ -6,6 +6,13 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "menlo:pixelsize=18:antialias=true:autohint=true";
+/* Spare fonts */
+static char *font2[] = {
+    "JoyPixels:pixelsize=13:antialias=true:autohint=true",
+    // "Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true",
+    // "Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true"
+};
+
 static int borderpx = 2;
 
 /*
@@ -221,7 +228,7 @@ static MouseShortcut mshortcuts[] = {
 
 /* Internal keyboard shortcuts. */
 #define MODKEY Mod1Mask
-#define TERMMOD (ControlMask|ShiftMask)
+#define TERMMOD (Mod1Mask|ShiftMask)
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
