@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "menlo:pixelsize=18:antialias=true:autohint=true";
+static char *font = "menlo:size=13:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
     "JoyPixels:pixelsize=13:antialias=true:autohint=true",
@@ -125,8 +125,10 @@ static const char *colorname[] = {
     [255] = 0,
 
     /* more colors can be added after 255 to use with DefaultXX */
-    "#cccccc",
-    "#555555",
+    "#000000", // 256 background
+    "#ffffff", // 257 foreground
+    "#ffffff", // 258 cursorColor
+    "#111111", // 259 reverse cursorColor
 };
 
 
@@ -134,9 +136,9 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+static unsigned int defaultcs = 258;
 static unsigned int defaultrcs = 257;
 
 /*
