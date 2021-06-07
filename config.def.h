@@ -5,10 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "menlo:size=13:antialias=true:autohint=true";
+static char *font = "mono:size=13:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-    "JoyPixels:pixelsize=13:antialias=true:autohint=true",
+    "JoyPixels:pixelsize=11:antialias=true:autohint=true",
     // "Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true",
     // "Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true"
 };

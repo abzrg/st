@@ -1,3 +1,6 @@
 patches/
 *rej
 *orig
+*o
+st
+config.h
